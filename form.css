@@ -1,0 +1,133 @@
+body{
+    margin: 0;
+}
+@font-face {
+    font-family: "vazir";
+    src: url(./fonts/Vazirmatn-Regular.woff2) format("woff2");
+    src: url(./fonts/Vazirmatn-Medium.woff2) format("woff2");
+    src: url(./fonts/Vazirmatn-Bold.woff2) format("woff2");
+}
+.orginal{
+    width: 100%;
+    height:720px;
+    margin-top:15px;
+}
+
+main{
+    margin: 0 auto;
+    width:35%;
+    height: 100%;
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 0 0 20px #5CDB95;
+}
+
+.top-div{
+    height: 15%;
+    width: 100%;
+    background-color: #5CDB95;
+    border-radius: 10px 10px 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.top-text{
+    font-weight: bold;
+    font-size: larger;
+    width: 60%;
+    height: 40%;
+    border-radius: 20px;
+    border: none;
+    background-color: #05386b;
+    color: white;
+    transition: 0.5s;
+}
+.top-text:hover{
+    cursor: pointer;
+    background-color: white;
+    color: #05386b;
+    box-shadow: 0 0 10px #05386b;
+}
+.main-div{
+display: flex;
+flex-direction: column;
+padding:10px
+}
+
+.input-div1{
+    height: 80px;
+    position: relative;
+    width: 99%;
+}
+.head1{
+    font-family: vazir;
+    padding-right: 10px;
+    padding-bottom: 15px;
+}
+.input1{
+    border:  1px solid black;
+    border-radius: 5px;
+    width: 100%;
+    height: 30px;
+    box-shadow: 0 0 5px #05386b;
+    
+}
+.photo1{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    left: 7px;
+    top: 4px;
+    
+}
+.photo2{
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    left: 50px;
+    top: 4px;
+}
+.check{
+    display: flex;
+    padding-right: 10px;
+}
+.mark{
+    border: none;    
+}
+.bottom-text{
+    font-family: vazir;
+}
+.but-div{
+    display: flex;
+    justify-content: center;
+}
+.but1{
+    width: 90px;
+    height: 40px;
+    font-family: vazir;
+    font-weight: bold;
+    background-color: #00ff73;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin-left: 30px;
+    transition: 0.5s;
+}
+.but1:hover{
+    box-shadow: 0 0 5px green;
+}
+.but2{
+    width: 90px;
+    height: 40px;
+    font-family: vazir;
+    font-weight: bold;
+    background-color: #fd5757;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin-left: 30px;
+}
+.but2:hover{
+    box-shadow: 0 0 5px red;
+}
