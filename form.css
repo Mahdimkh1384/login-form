@@ -1,12 +1,16 @@
-body{
+body{font-weight: 700;
     margin: 0;
+    background-image: url("4298fa7a35a28c1525cc9a70443e25d3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 @font-face {
     font-family: "vazir";
     src: url(./fonts/Vazirmatn-Regular.woff2) format("woff2");
     src: url(./fonts/Vazirmatn-Medium.woff2) format("woff2");
     src: url(./fonts/Vazirmatn-Bold.woff2) format("woff2");
-}
+    }
+
 .orginal{
     width: 100%;
     height:720px;
@@ -18,15 +22,17 @@ main{
     width:35%;
     height: 100%;
     border: 1px solid black;
-    border-radius: 10px;
+    border-radius: 5px 20px 5px 20px;
     box-shadow: 0 0 20px #5CDB95;
+    background-color: white;
+
 }
 
 .top-div{
     height: 15%;
     width: 100%;
     background-color: #5CDB95;
-    border-radius: 10px 10px 0 0;
+    border-radius: 5px 20px 0 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -35,6 +41,7 @@ main{
 .top-text{
     font-weight: bold;
     font-size: larger;
+    font-family: vazir;
     width: 60%;
     height: 40%;
     border-radius: 20px;
@@ -71,29 +78,39 @@ padding:10px
     width: 100%;
     height: 30px;
     box-shadow: 0 0 5px #05386b;
+    transition: 0.5s;
     
+}
+.input1:focus{
+    box-shadow: 0 0 8px #05386b;
 }
 .photo1{
     width: 30px;
     height: 30px;
     position: absolute;
     left: 7px;
-    top: 4px;
+    top: 2px;
+    cursor: pointer;
     
 }
 .photo2{
-    width: 40px;
-    height: 40px;
+    width: 100px;
+    height: 45px;
     position: absolute;
     left: 50px;
-    top: 4px;
+    top:-3px;
+}
+.check-but{
+    display: flex;
+    justify-content: space-between;
 }
 .check{
     display: flex;
     padding-right: 10px;
 }
 .mark{
-    border: none;    
+    border: none; 
+    cursor: pointer;   
 }
 .bottom-text{
     font-family: vazir;
@@ -101,9 +118,11 @@ padding:10px
 .but-div{
     display: flex;
     justify-content: center;
+    padding-top: 10px;
+    width: 60%;
 }
 .but1{
-    width: 90px;
+    width: 60%;
     height: 40px;
     font-family: vazir;
     font-weight: bold;
@@ -111,14 +130,15 @@ padding:10px
     color: white;
     border: none;
     border-radius: 5px;
-    margin-left: 30px;
+    margin-left: 20px;
     transition: 0.5s;
 }
 .but1:hover{
     box-shadow: 0 0 5px green;
+    cursor: pointer;
 }
 .but2{
-    width: 90px;
+    width: 60%;
     height: 40px;
     font-family: vazir;
     font-weight: bold;
@@ -130,4 +150,17 @@ padding:10px
 }
 .but2:hover{
     box-shadow: 0 0 5px red;
+    cursor: pointer;
 }
+.tel{
+    display: flex;
+    justify-content: center;
+    padding-top: 3px;
+}
+.tel-photo1,.tel-photo2,.tel-photo3{
+    width: 40px;
+    height: 40px;
+    margin-left: 5%;
+    cursor: pointer;
+}
+@media(min_whdth;)
