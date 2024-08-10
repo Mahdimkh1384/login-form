@@ -163,11 +163,11 @@ padding:10px
     margin-left: 5%;
     cursor: pointer;
 }
-@media(min-width:800px){
+@media(max-width:800px){
 body{
     background-image: none;
 }
 main{
-    width:fit-content;
+background-color: blue;
 }
 }
