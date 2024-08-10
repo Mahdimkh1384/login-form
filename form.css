@@ -167,5 +167,7 @@ padding:10px
 body{
     background-image: none;
 }
-
+main{
+    width: 400px;
+}
 }
