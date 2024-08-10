@@ -167,7 +167,7 @@ padding:10px
 body{
     background-image: none;
 }
-.orginal{
-    width: 400px;
+main{
+    width:fit-content;
 }
 }
