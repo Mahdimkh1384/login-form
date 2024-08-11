@@ -93,7 +93,7 @@ padding:10px
     cursor: pointer;
     
 }
-.photo2{
+#photo2{
     width: 50%px;
     height: 45px;
     position: absolute;
@@ -157,17 +157,23 @@ padding:10px
     justify-content: center;
     padding-top: 15px;
 }
-.tel-photo1,.tel-photo2,.tel-photo3{
-    width: 40px;
-    height: 40px;
-    margin-left: 5%;
-    cursor: pointer;
+.text{
+    font-family: vazir;
+    color: #05386b;
+    transition: 0.5S;
+}
+.text:hover{
+    font-weight:bolder;
+    color: #012548;
+}
+.link{
+    color:#05386b;
 }
 @media(max-width:760px){
 body{
     background-image: none;
 }
 main{
-width: 80%;
+width: 85%;
 }
 }

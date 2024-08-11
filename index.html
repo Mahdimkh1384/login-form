@@ -6,10 +6,10 @@
     <title>ورود</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <script src="forms.js"></script>
 </head>
 
-<body>
+<body onload="sum()">
     <div class="orginal">
         <main>
             <div class="top-div">
@@ -37,25 +37,25 @@
                 <div class="input-div1">
                     <input type="text" class="input1">
                     <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFoAAABaCAYAAAA4qEECAAAABmJLR0QA/wD/AP+gvaeTAAAFf0lEQVR4nO2d+WtcVRTHP51kFLWxtdS6VKwLjT9of9GmnaZVBP1BUKmxSXHDLoJoUKoiuICI/qagVvwPqkVaEMUFixrcCrELVgqKWy0aU5uMlcYkalvT8YfzUsbpu2+/777lfuBASTP3nHty5zv33eUMWCwWi8VisVgsFktGmWE6ABfagCuAGrAQuNSxWUCHYw1gAhgDJoEfHPsR2AXsBabSDjwPnAv0A9uAP5FExrHDwDvAA8A5KfYjk5wC3A58ioy+uMlV2b/AB8CdQDWVnmWEDuAp4AD6kquyX4BHgTO199IgVeBe4CDpJ7jVDgEbgHatPTbACuBbzCe41fYCyzX2+wS6Zx2nA88hH3SVEK8bBwaBHcB3wD5gGJlpjCNxz0Qk4DxkdtIJLAWWOf8XlCngeeBp4FiI12WGS4A9BB9dPwMvAt3IFC8q7U4bLwG/hvC/G1gQw68Rrgf+wL9zx5EZwc2EG/FBqQA3AgMBYmkgnx81DXFo4SLgL/w79THyVk+LxY5Pv7j+BlalGFdkHsa7I8PALcaiE99DLnE12zGg11SAQXkQdQc2AbPNhXaC2cCreCf7KNBjKsAgzEfWIJqDPgLcbzIoBeuR2LxkJNOavQT4HPlA/AzoMhuOJ1cDddTJPoAMHksCLAJGUSd7JyVbJ9HJIrxH9jPmQiseK4B/UM9EsiyBueMe1KN6D3oerErLZtTJXmcwrsIxC1l7UT1wnWEutOJxK+pRvUG389VAn24nGeJD3BO9n3grjJ6cjcw1R51/l4Eu1KNa23rN1iYnW3U5ySCqFb93dTjrc3FUFgm5CfdEHyHhBbK5wIiLozrlODNRQb1TsyZJR82S0WplkZCNuPf/jaQcuElGGSVkOe59HyGBDW6VZJRRQqrIDrxb/xfGbdxLMsooIao59d1BXqxaIOkjnCSE/f08skPx886oDQaVjLJJyBrc+705aoNhJKPV3orqNAfUcO/zYJTGVisaC2N5lZA4A8zPtjQ7iioZRZGQueg56VoH5jU7SvIvmlcJWUnyif7fOzwJybASkpJkWAlJUTKshMR8R3+haCzN06BpE2cAbnFpLxCvKxq8K2qDOSCqhJwkGRD8jMJ+xc8jP37mgN+Rk7Fh6Ue2+yKxFve/3raoDeaIVBfXLlM0PE4Br5C1EFRCXCUjLDNQHwBcFrfxHJDqBsibCgcvJOUg46S2pbdO4WSYchz8U0lIIpLRzBzkXodbsm9I0lGGSe3YxfsujhrARzqcZZRUDhL1oNapq3Q5zRipHI1rA37CPdEDupxmkFT2SB9CPapX6nZeJk5DCoy4JXoIOMtcaMVjPepRvclgXIWjDfgKdbLXmguteFyJel59FLjWXGjF41nUo3oUuNxcaMWiilzfVSV7BCkWaEmAC/AurVZHbqRmlSXAdqQo4XYyvj1XQ321t4FcQ8jiRch+Ti4jMQacbzIoP3pQfzhO22tkozDKHLxvx0bZwkqVXuRyuleyhzBb6mcV8JtLXM2m/cJmEvQilVu8OtJArpUtTjGubqRIi19ck8CFKcYVixrBt+oHkJJpOjYP2pB3T9BybIeA6zTEoZUFSC3nIB1sIFfMNiIXc+Js+LYD1wAv418NrNm+BC6O4dcT3SUzq0gpyscJd3d6EjngvRP43rGDyBRswvmdmUgVgvlIIe9OZKN4KeGqDxwHXgGeQCQv13TjvTZiyr5xYisUFeQGUxbKGteBx4BTtfbYMB3AI6gLj+i0YeBJwlXjzT1V4A7kWJnf3DuOTQGfALdhS6oxD3kcfptgVXr97DDwHnAfGTkMn8WvB6kgNei6kOu/018R0oE8vk+/7SeQb7gYQwp570O+ImQQ+BqZTVgsFovFYrFYLBaLxY//AIGC3Xv//GjLAAAAAElFTkSuQmCC"
-                        class="photo1">
-                    <img src="code.png" class="photo2">
+                        onclick="sum()" class="photo1">
+                    <img src="" id="photo2">
                 </div>
             </div>
             <div class="check-but">
-            <div class="check" >
-                <input type="checkbox"  class="mark">
-                <p  class="bottom-text"> قوانین را می پذیرم</p>
+                <div class="check">
+                    <input type="checkbox" class="mark">
+                    <p class="bottom-text"> مرا به خاطر بسپار</p>
+                </div>
+                <div class="but-div">
+                    <button class="but1">ورود</button>
+                    <button class="but2"> بازگشت</button>
+                </div>
             </div>
-            <div class="but-div">
-                <button class="but1">ورود</button>
-                <button class="but2"> بازگشت</button>
+            <div class="tel">
+                <p class="text">
+                   در صورتی که ثبت نام نکرده اید, برای <a href=";ktjh" class="link"><span>ثبت نام</span></a>  کلیک کنید
+                </p>
             </div>
-        </div>
-        <div class="tel">
-            <img src="R.png" title="Instagram" class="tel-photo1">
-            <img src="R (4).png" title="Telegram" class="tel-photo2">
-            <img src="R (5).png" title="WhatsApp" class="tel-photo3">
-        </div>
         </main>
     </div>
 
